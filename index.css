@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 25px;
+    background-color: #010107;
+}
+.box{
+    width: 75px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin:0.6rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.6s all ease;
+}
+.box:hover{
+    width: 215px;
+    background-color: rgb(141, 0, 0);
+    border-radius: 35px;
+    color: #fff;
+    box-shadow: 0 0 50px red;
+}
+.box:nth-child(2):hover{
+    background-color: #25d366;
+    box-shadow: 0 0 50px #44db7c;
+}
+.box:nth-child(3):hover{
+    background-color: #a014e0;
+    box-shadow: 0 0 50px #b039e7;
+}
+.box:nth-child(4):hover{
+    background-color: #7a7a7a;
+    box-shadow: 0 0 55px #c2c2c2;
+}
+.navbar p{
+    transform: translate(60px);
+}
+.box .icon-youtube, .icon-github, .icon-maps, .icon-wordpress{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.6s ease;
+}
+.icon-youtube{
+    background-color: rgb(141, 0, 0);
+}
+.icon-github:hover{
+    background-color: rgba(0, 0, 0, 0) 0.1s;
+    transition:all .5s ease-out;
+}
+.icon-maps{
+    background-color: #25d366;
+}
+.icon-github{
+    background-color: #a014e0;
+}
+.icon-wordpress{
+    background-color: #7a7a7a;
+}
+.box:hover .icon{
+    background-color: #fff;
+    color: #3b3b3b;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.26);
+}
